@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import jakarta.persistence.Column; // [추가 1] 이거 임포트 해야 합니다!
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,8 +12,14 @@ public class Quote {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
+ // [추가 2] length = 2000 (2000자까지 저장 가능하게 늘림)
+    // columnDefinition = "TEXT" 를 쓰면 무제한도 가능합니다.
+    @Column(length = 2000) 
     private String content;
+    
+    //카테고리 변수 추가
+    private String category;
 
     public Quote() {
     }
@@ -32,4 +39,18 @@ public class Quote {
     public String getContent() {
         return content;
     }
+    
+    public void setContent(String content) {
+        this.content = content;
+    }
+    
+    // 2. Getter & Setter 추가 (필수!)
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    
 }

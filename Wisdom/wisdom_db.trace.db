@@ -144,3 +144,15 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/6wngu/D
 	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
 	... 54 more
+2025-12-22 22:36:43.879818+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(255)": "U&'\\c6d0\\d558\\b294 \\b300\\b85c \\b418\\c9c0 \\c54a\\c744 \\b54c \\bc1c\\c0dd\\d558\\b294 \\... (291)"; SQL statement:
+insert into quote (category,content,id) values (?,?,default) [22001-232]
+2025-12-22 22:37:00.431619+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(255)": "U&'\\c6d0\\d558\\b294 \\b300\\b85c \\b418\\c9c0 \\c54a\\c744 \\b54c \\bc1c\\c0dd\\d558\\b294 \\... (291)"; SQL statement:
+insert into quote (category,content,id) values (?,?,default) [22001-232]
+2025-12-22 22:37:26.910588+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(255)": "U&'\\c6d0\\d558\\b294 \\b300\\b85c \\b418\\c9c0 \\c54a\\c744 \\b54c \\bc1c\\c0dd\\d558\\b294 \\... (291)"; SQL statement:
+insert into quote (category,content,id) values (?,?,default) [22001-232]
+2025-12-22 22:37:35.819043+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "CONTENT CHARACTER VARYING(255)": "U&'\\c6d0\\d558\\b294 \\b300\\b85c \\b418\\c9c0 \\c54a\\c744 \\b54c \\bc1c\\c0dd\\d558\\b294 \\... (291)"; SQL statement:
+insert into quote (category,content,id) values (?,?,default) [22001-232]
