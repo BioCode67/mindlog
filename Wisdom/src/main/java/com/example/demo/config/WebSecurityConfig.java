@@ -12,12 +12,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import com.example.demo.security.JwtFilter;
 
 @Configuration
-public class SecurityConfig {
+public class WebSecurityConfig {
 
     private final JwtFilter jwtFilter;
 
     // 생성자 주입 (우리가 만든 필터를 받아옵니다)
-    public SecurityConfig(JwtFilter jwtFilter) {
+    public WebSecurityConfig(JwtFilter jwtFilter) {
         this.jwtFilter = jwtFilter;
     }
 
