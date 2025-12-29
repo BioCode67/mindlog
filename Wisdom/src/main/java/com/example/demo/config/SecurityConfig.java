@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.demo.config; //commit test
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
